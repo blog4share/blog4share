@@ -19,17 +19,15 @@ Dùng tính chất đồng dạng trong hình học:
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Delta AHC  \sim  \Delta  CHB\\"/>
 
 
-\begin{align*}
-    \Delta AHC  \sim  \Delta  CHB
-\end{align*}
-
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pythagoras_similar_triangles_simplified.svg/320px-Pythagoras_similar_triangles_simplified.svg.png)
 
 
 Dự vào tính chất động dạng ta có biểu thức sau: 
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\alpha = \frac{AH}{CH} = \frac{HC}{HB} = \frac{AC}{CB} 
 \Rightarrow CH = \frac{AC \times HB }{CB}"/>
+
 Trong đó $\alpha$ là một hằng số. 
 
 Đồng dạng vật thể theo tỷ lệ:
