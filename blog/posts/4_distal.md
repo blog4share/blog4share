@@ -1,25 +1,40 @@
+---
+title: Distance
+display: home
+image: https://render.fineartamerica.com/images/rendered/search/phone-case/iphone12pro/images-medium-5/wireframe-geometrical-models-robert-brookscience-photo-library.jpg
+date: 2020-02-20
+tags: 
+  - display
+categories:
+  - futurama
+--- 
+
 # __Tính khoảng cách giữ vật thể và camera dùng openCV__
 
 ## __1. Kiến thức sử dụng:__
 
 #### a. Toán học:
 Dùng tính chất đồng dạng trong hình học: 
-\begin{align}
-\Delta AHC  \sim  \Delta  CHB\\
-\end{align}
 
-<img style="float:left;transform: rotate(90deg); width:300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pythagoras_similar_triangles_simplified.svg/320px-Pythagoras_similar_triangles_simplified.svg.png" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Delta AHC  \sim  \Delta  CHB\\"/>
+
+
+\begin{align*}
+    \Delta AHC  \sim  \Delta  CHB
+\end{align*}
+
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pythagoras_similar_triangles_simplified.svg/320px-Pythagoras_similar_triangles_simplified.svg.png)
+
 
 Dự vào tính chất động dạng ta có biểu thức sau: 
-\begin{align}
-\alpha = \frac{AH}{CH} = \frac{HC}{HB} = \frac{AC}{CB} 
-\Rightarrow CH = \frac{AC \times HB }{CB}
-\end{align}
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\alpha = \frac{AH}{CH} = \frac{HC}{HB} = \frac{AC}{CB} 
+\Rightarrow CH = \frac{AC \times HB }{CB}"/>
 Trong đó $\alpha$ là một hằng số. 
 
 Đồng dạng vật thể theo tỷ lệ:
 
-<img style="float:left;transform: rotate(90deg); width:300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SimilitudeHomoth%C3%A9tieL.svg/320px-SimilitudeHomoth%C3%A9tieL.svg.png" />
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SimilitudeHomoth%C3%A9tieL.svg/320px-SimilitudeHomoth%C3%A9tieL.svg.png)
 
 Dựa vào tính chất:___"Nếu ta biết kích thước của chứ L màu xanh dương và một cạnh của chữ L màu đen ta có thể tính được các cạnh còn lại của chữ L màu đen"___.
 
@@ -207,7 +222,9 @@ Mine is 14.3 something, measure your face width, are google it
 ___Known_width = 14.3(cm);___ 
 
 
-<img style="float:left;transform: rotate(90deg); width:300px" src="https://lh3.googleusercontent.com/_-eTAX56q4mvdh0rrfbHfiB9rDHLK60xjm0fvjqYMaq5A7ArOXqMChnnCJ2R_4Ae7lIENO9LUZ45kRYwlItGv1vXhdOft77KqajTYhnGMrMSKNFASmqNgc1ulAvAC3x1_2O_zWsyC_9VBNQHB-869GQ9YqUICBcp0DfCrGGIh8JQRUYmVkGMTeELvGrsi-HhX3UYkZD2QSsRo6NQe3P6SN3ZOoUIIOaWdDNHumaSy7cXLPtye_dfcvGynoIcSD07HeayPNzg-UvnmKq5Ua0vmv97DJbplOAO1vY7We1FYSxHDC0opn0srKGWiOZujARNGMtOc2NbaBctNHPjy3r1_AipiAoTsLysh1MBgLGGPVoGyUDAvpPl7jHSsJgEzgiRLMiProxF-4i3ZATzFQWC0nHUclw4RKeHDjJclZtoZe1EdsdOI6U6uNbVmwrieO6oloNB7LI8v1IInUKu0L0fKRpmv-YIIaePAgoRsBdYYtgUq1AK8FHJUk2Zp3UAJbFM0u1J_UcIODfL_peK9xWSeHlCWP052AOyEJwlCOuU1-oG4d_kwvvqAWhtgHjmbGmGLTXMWrfRMvHTLlZr0T-hsEsRzOM0s8foENv2ZNY9DxrYQav_gFgh41qeOWPY5admpYqJnS5J0dCylf2Naiwgxxvf1fKKiLNoFJYgftUes2SiTfv5W0ezusciR9FV9l-pPOZl_1NPSkSdxLP3AvJkWkIi=w215-h286-no?authuser=0" />
+![](https://lh3.googleusercontent.com/_-eTAX56q4mvdh0rrfbHfiB9rDHLK60xjm0fvjqYMaq5A7ArOXqMChnnCJ2R_4Ae7lIENO9LUZ45kRYwlItGv1vXhdOft77KqajTYhnGMrMSKNFASmqNgc1ulAvAC3x1_2O_zWsyC_9VBNQHB-869GQ9YqUICBcp0DfCrGGIh8JQRUYmVkGMTeELvGrsi-HhX3UYkZD2QSsRo6NQe3P6SN3ZOoUIIOaWdDNHumaSy7cXLPtye_dfcvGynoIcSD07HeayPNzg-UvnmKq5Ua0vmv97DJbplOAO1vY7We1FYSxHDC0opn0srKGWiOZujARNGMtOc2NbaBctNHPjy3r1_AipiAoTsLysh1MBgLGGPVoGyUDAvpPl7jHSsJgEzgiRLMiProxF-4i3ZATzFQWC0nHUclw4RKeHDjJclZtoZe1EdsdOI6U6uNbVmwrieO6oloNB7LI8v1IInUKu0L0fKRpmv-YIIaePAgoRsBdYYtgUq1AK8FHJUk2Zp3UAJbFM0u1J_UcIODfL_peK9xWSeHlCWP052AOyEJwlCOuU1-oG4d_kwvvqAWhtgHjmbGmGLTXMWrfRMvHTLlZr0T-hsEsRzOM0s8foENv2ZNY9DxrYQav_gFgh41qeOWPY5admpYqJnS5J0dCylf2Naiwgxxvf1fKKiLNoFJYgftUes2SiTfv5W0ezusciR9FV9l-pPOZl_1NPSkSdxLP3AvJkWkIi=w215-h286-no?authuser=0)
+
+
 
 
 ```python
@@ -274,7 +291,7 @@ cv2.destroyAllWindows()
 - Dùng camera USB để thực hiện. Độ phân giải 640x480.
 Hiện tại sử dụng nhận diện khuôn mặt băng ___"CascadeClassifier"___. 
 
-<img style="float:left;transform: rotate(90deg); width:500px;high:400px;" src="https://lh3.googleusercontent.com/XyvTgdPk2crI8DPh9xvH9XVZF60KooCChN2Q3CIMxDnjprlxJtuyib_-XCsatVMoIULMMIGeT8hC5OmSaixrJmK0pCBVm0yxh0-tC43La4yjrRkWg_fs-A6R5JP-zNHsIrK96ACRhEFTnEiuOeJLhgRt7k89l5NNikOI3NydFvwPbcnBhxvPh2f5_Vy3GtBSbvNvAz8AapK3v8w2it_pSEXjSjEDJn2LCze11lxBu-PvxD-De9BbY54LoGroJuaMlU1IggkiSkZNiX5PlO6G1EuOnHAsaJ7_xQ6Kzf5gIhuuXMVwiWlPZYUdHtK4xJ-rhf7muBJF8MgCEgaOCkjuRugUIe3a4gKopiBvdWSOQ7B7htnqta-G8nHPKFAFGo8RQi26U0Pb2Eyw6H1mGfLWQd7ZAGG2pae5NDXhU1gHRAgEA9xkgtOsm8fzyKJBPl16m6PsZOhQyZPKeLLErcnkCIkDyLZHccJijZ5JEr4Z-cgK0XMx5lbrEStp1iOKzjA2r86zFqi6WV8xc9YDNpH_UDtbE-O7fHCLdUyR6Ir3SJapCU5JYgaIDIq1vTUFoVH8fliE7WpWrHRddzwjBkFQtvL2Q4r0Byfix7i4G1xaQ0dTDJZNz20ZRJ_tj1sJCE_dIRQU2fXgT_4vga-5B8Z--u_j-g-OoP3Li2FabZd0AyxLwVNsvBckXAD6eOLVtiV0LduZPJ2wujfVMXxikeUzjKH0=w509-h286-no?authuser=0" />
+![](https://lh3.googleusercontent.com/XyvTgdPk2crI8DPh9xvH9XVZF60KooCChN2Q3CIMxDnjprlxJtuyib_-XCsatVMoIULMMIGeT8hC5OmSaixrJmK0pCBVm0yxh0-tC43La4yjrRkWg_fs-A6R5JP-zNHsIrK96ACRhEFTnEiuOeJLhgRt7k89l5NNikOI3NydFvwPbcnBhxvPh2f5_Vy3GtBSbvNvAz8AapK3v8w2it_pSEXjSjEDJn2LCze11lxBu-PvxD-De9BbY54LoGroJuaMlU1IggkiSkZNiX5PlO6G1EuOnHAsaJ7_xQ6Kzf5gIhuuXMVwiWlPZYUdHtK4xJ-rhf7muBJF8MgCEgaOCkjuRugUIe3a4gKopiBvdWSOQ7B7htnqta-G8nHPKFAFGo8RQi26U0Pb2Eyw6H1mGfLWQd7ZAGG2pae5NDXhU1gHRAgEA9xkgtOsm8fzyKJBPl16m6PsZOhQyZPKeLLErcnkCIkDyLZHccJijZ5JEr4Z-cgK0XMx5lbrEStp1iOKzjA2r86zFqi6WV8xc9YDNpH_UDtbE-O7fHCLdUyR6Ir3SJapCU5JYgaIDIq1vTUFoVH8fliE7WpWrHRddzwjBkFQtvL2Q4r0Byfix7i4G1xaQ0dTDJZNz20ZRJ_tj1sJCE_dIRQU2fXgT_4vga-5B8Z--u_j-g-OoP3Li2FabZd0AyxLwVNsvBckXAD6eOLVtiV0LduZPJ2wujfVMXxikeUzjKH0=w509-h286-no?authuser=0)
 
 # __4. Tài liệu tham khảo__
 http://ngoton.it/tinh-khoang-cach-tu-camera-den-mot-doi-tuong-voi-opencv/
